@@ -8,7 +8,7 @@ import com.yangke.model.User;
  */
 @Mapper
 public interface UserDAO {
-    // 注意空格
+
     String TABLE_NAME = " user ";
     String INSERT_FIELDS = " name, password, salt, head_url ";
     String SELECT_FIELDS = " id, " + INSERT_FIELDS;
