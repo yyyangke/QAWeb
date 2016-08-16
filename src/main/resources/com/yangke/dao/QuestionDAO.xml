@@ -5,7 +5,7 @@
     <sql id="table">question</sql>
     <sql id="selectFields">id, title, content, comment_count,created_date,user_id
     </sql>
-    <select id="selectLatestQuestions" resultType="com.nowcoder.model.Question">
+    <select id="selectLatestQuestions" resultType="com.yangke.model.Question">
         SELECT
         <include refid="selectFields"/>
         FROM
