@@ -20,6 +20,7 @@ public class User {
         this.headUrl = "";
     }
 
+
     public String getName() {
         return name;
     }
