@@ -12,6 +12,11 @@ public class Question {
     private Date createdDate;
     private int userId;
     private int commentCount;
+    private int attentionCount;
+
+    public Question () { }
+
+
 
     public int getId() {
         return id;
@@ -60,4 +65,7 @@ public class Question {
     public void setCommentCount(int commentCount) {
         this.commentCount = commentCount;
     }
+
+    public int getAttentionCount() { return attentionCount;}
+    public void setAttentionCount(int attentionCount) { this.attentionCount = attentionCount; }
 }
