@@ -68,4 +68,8 @@ public class Message {
         }
         return String.format("%d_%d", toId, fromId);
     }
+
+    public void setConversationId(int fromId, int toId) {
+            conversationId = fromId < toId ? String.format("%d_%d", fromId, toId) : String.format("%d_%d", toId, fromId);
+    }
 }
