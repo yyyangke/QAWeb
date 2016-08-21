@@ -10,6 +10,7 @@
         inherit: fInherit
     });
 
+    
     // 类型判断
     var aType = ['Array', 'Object', 'Function', 'String', 'Number', 'RegExp'];
     for (var i = 0, l = aType.length; i < l; i++) {

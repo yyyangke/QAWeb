@@ -18,6 +18,7 @@ var oPopupAdd = new PopupAdd({
                         '<input type="text" class="js-title zg-editor-input zu-seamless-input-origin-element" placeholder="写下你的问题" style="height:22px;min-height:auto;"></textarea>',
                     '</div>',
                 '</div>',
+
                 '<div class="zg-section-big">',
                     '<div class="add-question-section-title">问题说明（可选）：</div>',
                     '<div id="zh-question-suggest-detail-container" class="zm-editable-status-editing">',
@@ -79,6 +80,7 @@ var oPopupAdd = new PopupAdd({
                     dataType: 'json'
                 }).done(function (oResult) {
                     // 未登陆，跳转到登陆页面
+
                     if (oResult.code === 999) {
                         window.location.href = '/reglogin?next=' + window.encodeURIComponent(window.location.href);
                     } else {
